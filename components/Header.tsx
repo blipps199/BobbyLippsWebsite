@@ -12,7 +12,7 @@ export default function Header() {
                     <button>Front-End / Cloud Developer</button>
                     <h1 className="white">Talk is cheap.</h1>
                     <h1 className="white">Show me the code!</h1>
-                    <p className="gray">I build websites and also develop cloud applications.</p>
+                    <p className="gray">I build websites and develop cloud applications.</p>
                     <a className="green" href="mailto:bllipps199@gmail.com">Let&#39;s chat!</a>
                 </div>
                 <Image src="/images/blaiti.png" width={463} height={513} alt="blaiti"  /> 
