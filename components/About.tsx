@@ -7,14 +7,14 @@ export default function About() {
             <div className="flex">
                 <div className="flex-full">
                     <AboutCard
-                        title="UX/UI Design"
+                        title="Front-End Development"
                         icon="/icons/design.svg"
-                        description="I create design  products with unique ideas."
+                        description="I love building web front-ends. Taking a design and turning it into a fully functional website is a rewarding experience. I have experience with many front-end technologies including React, Vue, and Bootstrap. Just to name a few."
                         projects={7} />
                     <AboutCard
-                        title="Web Design"
+                        title="Cloud Development"
                         icon="/icons/code.svg"
-                        description="I develop Front-End with coding super smooth."
+                        description="I love tinkering with cloud services. I have experience with AWS and love serverless technologies. Especially Lambda, DynamoDB, and S3. I also enjoy working with CI/CD pipelines and infrastructure as code using the AWS CDK. I also see endless posibilities with AI in the cloud, especially with AWS Bedrock."
                         projects={10} />
                     <AboutCard
                         title="Mobile"
@@ -24,8 +24,8 @@ export default function About() {
                 </div>
                 
                 <div className="flex-full about-text">
-                    <h5 className="gray">Introduce</h5>
-                    <h1 className="white">Hello, I&#39;m Skander Blaiti</h1>
+                    <h5 className="gray">Introduction</h5>
+                    <h1 className="white">Hello, I&#39;m Bobby Lipps</h1>
                     <h3 className="white">Design is not just what it looks like. Design is how it works!</h3>
                     <p className="gray">I have proceeded my dream to be a developer as it has been my lifelong ambition. I am a talented Front-End developer with a UI/UX design background. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br/><br/>
                     I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.</p>
