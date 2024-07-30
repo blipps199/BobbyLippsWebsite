@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <title data-rh="true">Bobby Lipps - Front-End / Cloud Developer</title>
         <meta data-rh="true" property="og:type" content="website"/>
         <meta data-rh="true" property="og:title" content="Bobby Lipps - Front-End / Cloud Developer"/>
-        <meta data-rh="true" property="og:image" content="/images/blaiti.png"/>
+        <meta data-rh="true" property="og:image" content="/images/bobby.png"/>
       </Head>
 
       {/* Header */}
