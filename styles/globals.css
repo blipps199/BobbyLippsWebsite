@@ -35,6 +35,11 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: row;
   align-items: center;
 }
+.website-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Creates a 6-column grid */
+  gap: 20px; /* Optional: adds space between cards */
+}
 .flex-full {
   flex: 1;
 }
@@ -143,6 +148,20 @@ nav ul li {
 /* .partners img {
   filter: grayscale(100%);
 } */
+
+/* Portfolio */
+.website-card {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically within each card */
+  /* justify-content: space-between; */
+  border-radius: 0.5rem;
+  padding: 10px;
+}
+.website-card span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
 
 /* Footer */
 footer {

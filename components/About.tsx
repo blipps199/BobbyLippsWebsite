@@ -10,17 +10,20 @@ export default function About() {
                         title="Front-End Development"
                         icon="/icons/design.svg"
                         description="I am passionate about building web front-ends. Transforming a design into a fully functional website is an immensely rewarding journey for me. I have extensive experience with various front-end technologies, including React, Vue, and Bootstrap, among others."
-                        projects={7} />
+                        // projects={7}
+                    />
                     <AboutCard
                         title="Cloud Development"
                         icon="/icons/code.svg"
                         description="I have a passion for tinkering with cloud services. As an AWS Certified Developer, I particularly enjoy working with serverless technologies such as Lambda, DynamoDB, and S3. I thrive on building CI/CD pipelines and utilizing infrastructure as code with AWS CDK. Additionally, I see endless possibilities for AI in the cloud, especially with AWS Bedrock."
-                        projects={10} />
+                        // projects={10}
+                    />
                     <AboutCard
                         title="AI and ChatBots"
                         icon="/icons/phone.svg"
-                        description="Recently, I have developed a keen interest in AI-powered chatbots. I have been working with OpenAI to build several chatbots and am also exploring other AI technologies like AWS Bedrock/Knowledgebase. It's been an exciting journey to process large datasets and use AI to extract valuable insights from them."
-                        projects={7} />
+                        description="I have developed a keen interest in AI-powered chatbots. I have been working with OpenAI and LangChain to build several chatbots and am also exploring other AI technologies like AWS Bedrock/Knowledgebase. It's been an exciting journey to process large datasets and use AI to extract valuable insights from them."
+                        // projects={7}
+                    />
                 </div>
                 
                 <div className="flex-full about-text">
@@ -49,7 +52,7 @@ type Props = {
     title: string,
     icon: string | StaticImageData,
     description: string,
-    projects: number
+    projects?: number
 }
 
 function AboutCard ({title, icon, description, projects} : Props) {
@@ -60,7 +63,9 @@ function AboutCard ({title, icon, description, projects} : Props) {
                 <Image src={icon} width={28} height={28} alt={title} />
             </div>
             <p className="white">{description}</p>
-            <span className="gray">{projects.toString()} projects</span>
+            {projects && projects > 0 && (
+                <span className="gray">{projects} projects</span>
+            )}
         </div>
     )
 }
