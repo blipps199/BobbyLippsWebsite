@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
+import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -8,21 +9,21 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Blaiti - Frontend Developer</title>
+        <title>Bobby Lipps - Front-End / Cloud Developer</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="author" content="Skander Blaiti" />
+        <meta name="author" content="Bobby Lipps" />
         <meta name="keywords" content="ReactJS, NextJS" />
-        <meta name="description" content="I am a talented Front-End developer with a UI/UX design background." />
+        <meta name="description" content="I am a talented Front-End / Cloud Developer looking for my next opporunity." />
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#2D2E32" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta property="og:site_name" content="Blaiti - Frontend Developer" />
+        <meta property="og:site_name" content="Bobby Lipps - Front-End / Cloud Developer" />
         <meta property="og:locale" content="en_GB" />
-        <title data-rh="true">Blaiti - Frontend Developer</title>
+        <title data-rh="true">Bobby Lipps - Front-End / Cloud Developer</title>
         <meta data-rh="true" property="og:type" content="website"/>
-        <meta data-rh="true" property="og:title" content="Blaiti - Frontend Developer"/>
-        <meta data-rh="true" property="og:image" content="/images/blaiti.png"/>
+        <meta data-rh="true" property="og:title" content="Bobby Lipps - Front-End / Cloud Developer"/>
+        <meta data-rh="true" property="og:image" content="/images/bobby.png"/>
       </Head>
 
       {/* Header */}
@@ -31,6 +32,9 @@ const Home: NextPage = () => {
       <main>
         {/* About */}
         <About />
+        
+        {/* Portfolio */}
+        <Portfolio />
       </main>
 
       {/* Footer */}
