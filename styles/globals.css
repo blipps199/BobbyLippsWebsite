@@ -140,6 +140,9 @@ nav ul li {
 .partners {
   padding-top: 5rem;
 }
+/* .partners img {
+  filter: grayscale(100%);
+} */
 
 /* Footer */
 footer {
