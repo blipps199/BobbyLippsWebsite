@@ -145,15 +145,11 @@ nav ul li {
 .partners {
   padding-top: 5rem;
 }
-/* .partners img {
-  filter: grayscale(100%);
-} */
 
 /* Portfolio */
 .website-card {
   display: flex;
-  flex-direction: column; /* Stack elements vertically within each card */
-  /* justify-content: space-between; */
+  flex-direction: column;
   border-radius: 0.5rem;
   padding: 10px;
 }
@@ -178,6 +174,11 @@ footer ul li {
 }
 
 /* --------- Responsive Design --------- */
+@media (max-width: 1200px) {
+  .website-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media (max-width: 768px) {
   .flex {
     row-gap: 2rem;
@@ -208,6 +209,9 @@ footer ul li {
     flex-direction: row !important;
     justify-content: space-between !important;
   }
+  .website-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* Footer */
   footer ul {
     column-gap: 1rem;
@@ -215,5 +219,10 @@ footer ul li {
   }
   footer ul li {
     margin-left: 0;
+  }
+}
+@media (max-width: 426px) {
+  .website-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

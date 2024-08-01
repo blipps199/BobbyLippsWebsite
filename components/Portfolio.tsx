@@ -97,7 +97,7 @@ function WebsiteCard ({ screenshot, link, description, techUsed } : Props) {
     return (
         <div className="light-bg website-card">
             <a href={link} target="_blank" rel="noopener noreferrer nofollow">
-                <Image src={screenshot} alt="Website Screenshot" width={300} height={151} />
+                <Image src={screenshot} alt="Website Screenshot" width={350} height={176} />
             </a>
             <div className="website-info">
                 <p className="white">{description}</p>
